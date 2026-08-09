@@ -16,7 +16,7 @@ Aplicação em linha de comando (CLI) construída com **Spring Shell** e **Sprin
 
 ## Funcionalidades
 
-- Executar requisições HTTP `GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `PATCH`, `TRACE`, `CONNECT`.
+- Executar requisições HTTP `GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `PATCH`, `TRACE` e `CONNECT`.
 - Definir variáveis de ambiente estáticas, aleatórias ou lidas de arquivo.
 - Substituir placeholders `{{variavel}}` em URL, headers e corpo da requisição.
 - Capturar valores de respostas JSON e reutilizá-los em requisições posteriores.
