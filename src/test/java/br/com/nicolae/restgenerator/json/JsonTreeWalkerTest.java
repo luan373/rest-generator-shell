@@ -70,7 +70,7 @@ class JsonTreeWalkerTest {
 	}
 
 	@Test
-	void shouldSaveCustomPathWithArrayIndex() {
+	void shouldSaveCustomPathWithArrayIndex() throws Exception {
 		String json = """
 				{
 				  "users": [

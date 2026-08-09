@@ -24,8 +24,7 @@ public class RequestCommands {
 	@Command(name = "start", description = "Executa o arquivo XML mencionado.")
 	public void start(
 			@Option(shortName = 'f', longName = "file", description = "Arquivo XML a ser executado.", defaultValue = "requests.xml") String file,
-			@Option(shortName = 'r', longName = "repeat", description = "Quantidade de repetições.", defaultValue = "1") int repeat)
-			throws DocumentException {
+			@Option(shortName = 'r', longName = "repeat", description = "Quantidade de repetições.", defaultValue = "1") int repeat) {
 		try {
 			clearSingletons();
 			new RestGenerator().readXML(file, repeat);
@@ -40,7 +39,6 @@ public class RequestCommands {
 			@Option(shortName = 'f', longName = "file", description = "Arquivo XML a ser executado.", defaultValue = "requests.xml") String file,
 			@Option(longName = "csvFile", description = "Arquivo CSV com os dados.", defaultValue = "") String csvFile,
 			@Option(shortName = 'd', longName = "delimiter", description = "Delimitador do CSV.", defaultValue = ",") String csvDelimiter) {
-
 		try {
 			clearSingletons();
 			new RestGenerator().readXmlWithCsv(file, csvFile, csvDelimiter);

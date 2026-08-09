@@ -90,7 +90,7 @@ public class RestGenerator {
 		if ("restGenerator".equals(xmlElement.getName())) {
 			for (Iterator<Element> it = xmlElement.elementIterator(); it.hasNext();) {
 				Element restGeneratorElement = it.next();
-				if ("enviroments".equals(restGeneratorElement.getName())) {
+				if ("environments".equals(restGeneratorElement.getName())) {
 					this.envVariableGenerator.readEnvVariables(restGeneratorElement);
 				} else if ("requests".equals(restGeneratorElement.getName())) {
 					this.requestsGenerator.readRequests(restGeneratorElement);
